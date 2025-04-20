@@ -2,43 +2,116 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Защита Киев</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Протигаз ГП-5 — Захист Київ</title>
   <style>
-    body { margin: 0; font-family: 'Arial', sans-serif; background-color: #121212; color: #f0f0f0; }
-    header { background-color: #1e1e1e; padding: 20px; text-align: center; border-bottom: 3px solid #ff3c00; }
-    header h1 { margin: 0; font-size: 2.5em; letter-spacing: 2px; }
-    .hero { background: url('https://i.imgur.com/obN8vQ4.jpg') center/cover no-repeat; padding: 80px 20px; text-align: center; }
-    .hero h2 { font-size: 2em; background-color: rgba(0,0,0,0.6); display: inline-block; padding: 10px 20px; border: 2px solid #ff3c00; }
-    .catalog { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; padding: 40px 20px; }
-    .item { background-color: #1e1e1e; border: 2px solid #333; border-radius: 10px; padding: 20px; width: 300px; text-align: center; }
-    .item img { width: 100%; border-radius: 6px; }
-    .item h3 { margin: 15px 0 10px; }
-    .item p { margin: 5px 0; }
-    .item button { margin-top: 10px; padding: 10px 20px; background-color: #ff3c00; border: none; color: white; font-weight: bold; cursor: pointer; border-radius: 4px; }
-    .item button:hover { background-color: #e23600; }
-    .item .social-buttons a { display: block; margin-top: 10px; padding: 10px; background-color: #4c8bf5; color: white; text-decoration: none; font-weight: bold; border-radius: 4px; text-align: center; }
-    .item .social-buttons a.viber { background-color: #665c94; }
-    footer { text-align: center; padding: 20px; background-color: #1e1e1e; font-size: 0.9em; border-top: 2px solid #ff3c00; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .product-image {
+      text-align: center;
+    }
+    .product-image img {
+      max-width: 100%;
+      height: auto;
+    }
+    .product-details {
+      margin-top: 20px;
+    }
+    .product-details h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .product-details p, ul {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .price {
+      font-size: 20px;
+      color: #e74c3c;
+      margin: 20px 0;
+    }
+    .contact-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .contact-buttons a {
+      flex: 1 1 200px;
+      text-align: center;
+      padding: 12px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    .telegram {
+      background-color: #0088cc;
+    }
+    .telegram:hover {
+      background-color: #0077b6;
+    }
+    .viber {
+      background-color: #665cac;
+    }
+    .viber:hover {
+      background-color: #594f9c;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-  <header><h1>Защита Київ</h1></header>
-  <section class="hero"><h2>Проти́гази та засоби захисту. Надійно. Жорстко.</h2></section>
-  <section class="catalog">
-    <div class="item">
-      <img src="https://imgur.com/a/WbUaAQt" alt="ГП-5">
-      <h3>Проти́газ ГП-5</h3>
-      <p>Комплект (фільтр + сумка) — надійний захист для різних умов. Легкий, зручний та ефективний у використанні. Ідеальний для збереження здоров'я в умовах забрудненого повітря.</p>
-      <p><strong>Ціна: 300 грн</strong></p>
-      <button>Замовити</button>
-      <div class="social-buttons">
-        <a href="https://t.me/psychoKolomoisky" target="_blank">Telegram</a>
-        <a href="viber://chat?number=%2B380XXXXXXXXX" class="viber" target="_blank">Viber</a>
+  <header>
+    <h1>Захист Київ</h1>
+  </header>
+  <div class="container">
+    <div class="product-image">
+      <img src="https://i.imgur.com/0s5VmZv.jpg" alt="Протигаз ГП-5">
+    </div>
+    <div class="product-details">
+      <h1>Протигаз ГП-5</h1>
+      <p>Протигаз ГП-5 призначений для захисту органів дихання, очей та обличчя від отруйних, радіоактивних речовин і біологічних агентів. Часто використовується в реконструкціях та антуражних тактичних іграх.</p>
+      <p><strong>Комплектація:</strong></p>
+      <ul>
+        <li>Шолом-маска (розмір 3)</li>
+        <li>Фільтрувально-поглинальна коробка (ФПК)</li>
+        <li>Сумка для перенесення</li>
+      </ul>
+      <p class="price">Ціна: 300 грн</p>
+      <div class="contact-buttons">
+        <a href="https://t.me/psychoKolomoisky" class="telegram" target="_blank">Замовити через Telegram</a>
+        <a href="viber://chat?number=+380632731557" class="viber" target="_blank">Замовити через Viber</a>
       </div>
     </div>
-  </section>
-  <footer>© 2025 Защита Київ</footer>
+  </div>
+  <footer>
+    © 2025 Захист Київ
+  </footer>
 </body>
 </html>
-
